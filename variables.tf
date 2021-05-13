@@ -13,7 +13,7 @@ variable "cluster_identity_oidc_issuer_arn" {
 
 variable "helm_chart_version" {
   type        = string
-  default     = "0.1.2"
+  default     = "0.1.1"
 }
 
 variable "settings" {
