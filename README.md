@@ -2,6 +2,12 @@
 
 Terraform module for deploying [External Secrets Operator](https://github.com/external-secrets/external-secrets) to an AWS/EKS cluster.
 
+##  See Also
+
+- http://external-secrets.io/
+- https://github.com/external-secrets/external-secrets
+- https://blog.container-solutions.com/the-birth-of-the-external-secrets-community
+
 ## Usage
 
 ```
