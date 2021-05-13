@@ -43,7 +43,7 @@ module "external-secrets" {
 | cluster\_identity\_oidc\_issuer | The OIDC Identity issuer for the cluster. | `string` | n/a | yes |
 | cluster\_identity\_oidc\_issuer\_arn | The OIDC Identity issuer ARN for the cluster that can be used to associate IAM roles with a service account. | `string` | n/a | yes |
 | helm\_chart\_version | External Secrets chart version. | `string` | `"6.1.0"` | no |
-| settings | Additional settings which will be passed to the Helm chart values, see https://github.com/external-secrets/kubernetes-external-secrets/tree/master/charts/kubernetes-external-secrets | `map(any)` | `{}` | no |
+| settings |  https://github.com/external-secrets/external-secrets/tree/main/deploy/charts/external-secrets | `map(any)` | `{}` | no |
 | mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable | `any` | `null` | no |
 
 ## Outputs
