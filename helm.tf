@@ -1,4 +1,4 @@
-##  https://github.com/external-secrets/external-secrets/tree/v0.1.2/deploy/charts/external-secrets
+##  https://github.com/external-secrets/external-secrets/tree/deploy/charts/external-secrets
 resource "helm_release" "external-secrets" {
 
   depends_on = [var.mod_dependency, kubernetes_namespace.external-secrets]
@@ -6,7 +6,8 @@ resource "helm_release" "external-secrets" {
   name       = "external-secrets"
   chart      = "external-secrets"
   repository = "https://charts.external-secrets.io/"
-  version    = var.helm_chart_version
+  #version    = var.helm_chart_version
+  version    = "0.1.1"
 
   ##  TEMPORARILY HOSTED HELM CHART WITH THE KubeVersion UPDATE 
   ##  https://github.com/external-secrets/external-secrets/commit/bac338ed742b402c7debc988f519519c6159d385
